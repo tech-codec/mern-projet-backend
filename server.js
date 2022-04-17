@@ -29,7 +29,7 @@ app.get('/jwtid', requireAuth, (req, res) => {
      res.status(200).send(res.locals.user._id)
   });
 
-//routes
+//routes de l'api
 app.use('/api/post', postRoutes);
 app.use('/api/user',userRoutes);
 
