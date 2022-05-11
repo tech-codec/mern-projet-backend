@@ -63,7 +63,7 @@ module.exports.createPost = async (req, res) => {
 
 
   module.exports.updatePost = (req, res) => {
-    if (!ObjectID.isValid(req.params.id))
+    if (!ObjectId.isValid(req.params.id))
       return res.status(400).send("ID unknown : " + req.params.id);
   
     const updatedRecord = {
